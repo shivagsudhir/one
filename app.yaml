@@ -1,0 +1,12 @@
+runtime: python39
+
+env_variables:
+  TAG_LANG: 'ja'
+  TIMESTAMP_TZ: 'Asia/Tokyo'
+
+handlers:
+- url: /
+  script: main.app
+- url: /.*
+  script: main.app
+  login: required
