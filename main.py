@@ -25,7 +25,7 @@ app = Flask(__name__)
 
 MAX_PHOTOS = 20
 
-project_id = os.getenv('vimble-91456')
+project_id = os.getenv('tranquil-marker-389910')
 bucket_name = '{}.appspot.com'.format(project_id)
 storage_path = 'https://storage.cloud.google.com/{}'.format(bucket_name)
 tag_language = os.getenv('TAG_LANG', 'en')
